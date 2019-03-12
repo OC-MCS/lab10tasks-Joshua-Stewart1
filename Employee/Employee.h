@@ -7,13 +7,13 @@ class Employee
 private:
 	string name;
 	string hireDate;
-	int number;
+	string number;
 public:
-	Employee(int empNum, string empName, string empHireDate);
-	int getNumber() const;
+	Employee(string empNum, string empName, string empHireDate);
+	string getNumber() const;
 	string getName() const;
 	string getDate() const;
-	void setNumber(int empNum);
+	void setNumber(string empNum);
 	void setName(string empName);
 	void setDate(string empHireDate);
 };

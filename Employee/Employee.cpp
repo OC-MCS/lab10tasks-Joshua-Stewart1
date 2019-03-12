@@ -1,13 +1,13 @@
 #include "Employee.h"
 
-Employee::Employee(int empNum, string empName, string empHireDate)
+Employee::Employee(string empNum, string empName, string empHireDate)
 {
 	number = empNum;
 	name = empName;
 	hireDate = empHireDate;
 }
 
-int Employee::getNumber() const
+string Employee::getNumber() const
 {
 	return number;
 }
@@ -22,7 +22,7 @@ string Employee::getDate() const
 	return hireDate;
 }
 
-void Employee::setNumber(int empNum)
+void Employee::setNumber(string empNum)
 {
 	number = empNum;
 }

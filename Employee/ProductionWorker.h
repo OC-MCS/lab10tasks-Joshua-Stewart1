@@ -1,12 +1,16 @@
 #pragma once
-#include <string>
-using namespace std;
+#include "Employee.h"
 
-class ProductionWorker
+class ProductionWorker : public Employee
 {
 private:
-	
+	int shift;
+	double hourlyRate;
 public:
-	ProductionWorker();
+	ProductionWorker(string empNum, string empName, string empHireDate, int empShift, double empRate);
+	int getShift() const;
+	double getHourlyRate() const;
+	void setShift(int empShift);
+	void setHourlyRate(double empRate);
 };
 
